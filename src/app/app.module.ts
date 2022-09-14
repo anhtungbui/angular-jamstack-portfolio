@@ -17,12 +17,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     PageNotFoundComponent,
     ProjectsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ScullyLibModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ScullyLibModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
