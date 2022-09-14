@@ -103,5 +103,6 @@
         }
       }
     }
-  }
+  },
+  "defaultProject": "scully-portfolio-v2"
 }
