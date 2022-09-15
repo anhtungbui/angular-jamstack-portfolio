@@ -90,9 +90,18 @@
             "styles": ["src/styles.scss"],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
         }
       }
     }
   },
-  "defaultProject": "scully-portfolio-v2"
+  "defaultProject": "scully-portfolio-v2",
+  "cli": {
+    "schematicCollections": ["@angular-eslint/schematics"]
+  }
 }
