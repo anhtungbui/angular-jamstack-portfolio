@@ -2,3 +2,5 @@ dist/
 .angular/
 .scully/
 .vscode/
+src/assets/scully-routes.json
+src/assets/css/
