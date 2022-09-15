@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -17,7 +18,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     PageNotFoundComponent,
     ProjectsComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ScullyLibModule],
+  imports: [BrowserModule, SharedModule, AppRoutingModule, ScullyLibModule],
   providers: [],
   bootstrap: [AppComponent]
 })
