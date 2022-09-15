@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div class="example-input">
+  <input
+    placeholder="input here"
+    nz-input
+    [(ngModel)]="inputValue"
+    (input)="onInput($event)"
+    [nzAutocomplete]="auto"
+  />
+  <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
+</div>
