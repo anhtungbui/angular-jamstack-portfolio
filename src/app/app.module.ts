@@ -6,8 +6,6 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
@@ -17,7 +15,7 @@ import en from '@angular/common/locales/en';
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent, ProjectsComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     SharedModule,
