@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /** Based on @see https://ng.ant.design/components/alert/en */
+  --nz-blue: #1890ff;
+  --nz-blue-outline: #91d5ff;
+  --nz-blue-background: #e6f7ff;
+  --nz-red: #ff4d4f;
+  --nz-green: #52c41a;
+  --nz-gray: #9e9e9e;
+}

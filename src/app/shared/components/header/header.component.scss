@@ -1,17 +1,38 @@
 .navbar {
   padding: 1rem;
-  border: 1px solid red;
+  height: 70px;
   display: flex;
+  box-shadow: 0 2px 8px #f0f1f2;
 }
 
 .logo {
+  max-height: 100%;
+
+  img {
+    max-height: 100%;
+    margin-right: 0.5rem;
+  }
 }
 
 .spacer {
   flex: 1;
 }
 
-.link {
-  border: 1px solid green;
-  padding-left: 1rem;
+.link-container {
+  display: flex;
+  align-items: center;
+
+  .link {
+    color: black;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background: rgb(248 250 252);
+    }
+  }
+
+  .active-link {
+    color: var(--nz-blue);
+  }
 }
