@@ -1,0 +1,32 @@
+<ng-container *ngIf="project; else isLoading">
+  <!-- CARD -->
+  <nz-card nzHoverable [nzCover]="coverTemplate">
+    <nz-card-meta
+      nzTitle="{{ project.title }}"
+      [nzDescription]="descriptionTemplate"
+    ></nz-card-meta>
+  </nz-card>
+
+  <!-- SCREENSHOT -->
+  <ng-template #coverTemplate>
+    <img alt="example" src="{{ project.screenshot }}" />
+  </ng-template>
+
+  <ng-template #descriptionTemplate>
+    <!-- DESCRIPTION -->
+    <p>{{ project.description }}</p>
+
+    <!-- TECHNOLOGIES -->
+    <div>
+      <nz-tag *ngFor="let technology of project.technologies" nzColor="#108ee9">{{
+        technology
+      }}</nz-tag>
+    </div>
+  </ng-template>
+  <!-- End of CARD -->
+</ng-container>
+
+<!-- TODO: Use global spinner -->
+<ng-template #isLoading>
+  <nz-card [nzLoading]="true"></nz-card>
+</ng-template>
