@@ -7,7 +7,7 @@
   </p>
 
   <!-- CONTENT -->
-  <div nz-row>
+  <div nz-row *ngIf="projects$ | async as projects">
     <div nz-col nzSpan="12" *ngFor="let project of projects">
       <app-project-card [project]="project"></app-project-card>
     </div>

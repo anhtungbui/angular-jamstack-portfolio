@@ -11,10 +11,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ProjectListComponent
+        component: ProjectListComponent,
+        pathMatch: 'full'
       },
       {
-        path: 'detail',
+        path: ':id',
         component: ProjectDetailComponent
       }
     ]

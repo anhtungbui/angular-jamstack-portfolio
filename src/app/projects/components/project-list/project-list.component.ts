@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Technology } from '../../enums/technology.enum';
+import { Observable } from 'rxjs';
 import { Project } from '../../interfaces/project.interface';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-project-list',
@@ -8,26 +9,7 @@ import { Project } from '../../interfaces/project.interface';
   styleUrls: ['./project-list.component.scss']
 })
 export class ProjectListComponent {
-  projects: Project[] = [
-    {
-      title: 'Larabook',
-      description: 'A social network app inspired by Facebook built with PHP Laravel',
-      technologies: [Technology.PHP, Technology.MYSQL],
-      screenshot: 'assets/img/projects/larabook-screenshot.png',
-      isSourceCodeAvailable: false,
-      hasLiveDemo: false
-    },
-    {
-      title: 'StockBay',
-      description: 'A modern information hub for stock traders 📚',
-      technologies: [Technology.JAVASCRIPT, Technology.REACT],
-      screenshot: 'assets/img/projects/stockbay-screenshot.png',
-      isSourceCodeAvailable: true,
-      sourceCodeUrl: 'https://github.com/anhtungbui/React-StockBay',
-      hasLiveDemo: true,
-      liveDemoUrl: 'https://stockbay.anhtungbui.com/'
-    }
-  ];
+  projects$: Observable<Project[]> = this.projectService.projects$;
 
-  constructor() {}
+  constructor(private projectService: ProjectService) {}
 }
