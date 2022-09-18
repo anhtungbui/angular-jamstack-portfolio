@@ -16,7 +16,13 @@ const routes: Routes = [
     path: 'projects',
     loadChildren: () => import('./projects/projects.module').then((m) => m.ProjectsModule),
     title: 'Projects'
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then((m) => m.AboutModule),
+    title: 'About'
   }
+  // FIXME:
   // { path: '**', redirectTo: '' }
 ];
 
