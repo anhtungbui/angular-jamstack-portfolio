@@ -4,9 +4,10 @@ import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { WelcomeTerminalComponent } from './components/welcome-terminal/welcome-terminal.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, WelcomeTerminalComponent],
   imports: [SharedModule, HomeRoutingModule, NzAutocompleteModule]
 })
 export class HomeModule {}
