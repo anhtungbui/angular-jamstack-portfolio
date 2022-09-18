@@ -1,6 +1,6 @@
 <ng-container *ngIf="project; else isLoading">
   <!-- CARD -->
-  <nz-card nzHoverable [nzCover]="coverTemplate">
+  <nz-card nzHoverable [nzCover]="coverTemplate" (click)="onOpenModal(project)">
     <nz-card-meta [nzTitle]="titleTemplate" [nzDescription]="descriptionTemplate"></nz-card-meta>
   </nz-card>
 
@@ -55,3 +55,37 @@
 <ng-template #isLoading>
   <nz-card [nzLoading]="true"></nz-card>
 </ng-template>
+
+<nz-modal
+  [(nzVisible)]="modalState.isVisble"
+  nzTitle="{{ modalState.title }}"
+  [nzFooter]="modalFooter"
+  (nzOnCancel)="handleCancel()"
+  nzWidth
+>
+  <ng-container *nzModalContent>
+    <img class="screenshot" src="{{ modalState.screenshot }}" alt="screenshot" />
+  </ng-container>
+
+  <ng-template #modalFooter>
+    <!-- LIVE DEMO -->
+    <button
+      *ngIf="modalState.hasLiveDemo && modalState.liveDemoUrl"
+      nz-button
+      nzType="primary"
+      (click)="onRedirect(modalState.liveDemoUrl)"
+    >
+      Live demo
+    </button>
+
+    <!-- SEE CODE -->
+    <button
+      *ngIf="modalState.isSourceCodeAvailable && modalState.sourceCodeUrl"
+      nz-button
+      nzType="default"
+      (click)="onRedirect(modalState.sourceCodeUrl)"
+    >
+      See code
+    </button>
+  </ng-template>
+</nz-modal>
