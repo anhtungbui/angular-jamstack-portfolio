@@ -8,9 +8,10 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCardModule } from 'ng-zorro-antd/card';
 
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [CommonModule, FormsModule, RouterModule, NzGridModule, NzButtonModule, NzIconModule],
   exports: [
     CommonModule,
@@ -18,9 +19,10 @@ import { HeaderComponent } from './components/header/header.component';
     RouterModule,
     NzGridModule,
     NzButtonModule,
-    HeaderComponent,
     NzIconModule,
-    NzCardModule
+    NzCardModule,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule {}
