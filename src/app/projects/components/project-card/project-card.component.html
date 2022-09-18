@@ -1,15 +1,40 @@
 <ng-container *ngIf="project; else isLoading">
   <!-- CARD -->
   <nz-card nzHoverable [nzCover]="coverTemplate">
-    <nz-card-meta
-      nzTitle="{{ project.title }}"
-      [nzDescription]="descriptionTemplate"
-    ></nz-card-meta>
+    <nz-card-meta [nzTitle]="titleTemplate" [nzDescription]="descriptionTemplate"></nz-card-meta>
   </nz-card>
 
   <!-- SCREENSHOT -->
   <ng-template #coverTemplate>
     <img alt="example" src="{{ project.screenshot }}" />
+  </ng-template>
+
+  <ng-template #titleTemplate>
+    <div class="card-title">
+      <h2>{{ project.title }}</h2>
+
+      <span>
+        <!-- LIVE DEMO -->
+        <button
+          *ngIf="project.hasLiveDemo && project.liveDemoUrl"
+          nz-button
+          nzType="primary"
+          (click)="onRedirect(project.liveDemoUrl)"
+        >
+          Live demo
+        </button>
+
+        <!-- SEE CODE -->
+        <button
+          *ngIf="project.isSourceCodeAvailable && project.sourceCodeUrl"
+          nz-button
+          nzType="default"
+          (click)="onRedirect(project.sourceCodeUrl)"
+        >
+          See code
+        </button>
+      </span>
+    </div>
   </ng-template>
 
   <ng-template #descriptionTemplate>

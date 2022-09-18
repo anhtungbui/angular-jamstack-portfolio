@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { windowCount } from 'rxjs';
 import { Project } from '../../interfaces/project.interface';
 
 @Component({
@@ -10,4 +11,8 @@ export class ProjectCardComponent {
   @Input() project?: Project;
 
   constructor() {}
+
+  onRedirect(url: string) {
+    window.open(url, '_blank');
+  }
 }

@@ -13,13 +13,19 @@ export class ProjectListComponent {
       title: 'Larabook',
       description: 'A social network app inspired by Facebook built with PHP Laravel',
       technologies: [Technology.PHP, Technology.MYSQL],
-      screenshot: 'assets/img/projects/larabook-screenshot.png'
+      screenshot: 'assets/img/projects/larabook-screenshot.png',
+      isSourceCodeAvailable: false,
+      hasLiveDemo: false
     },
     {
       title: 'StockBay',
       description: 'A modern information hub for stock traders 📚',
       technologies: [Technology.JAVASCRIPT, Technology.REACT],
-      screenshot: 'assets/img/projects/stockbay-screenshot.png'
+      screenshot: 'assets/img/projects/stockbay-screenshot.png',
+      isSourceCodeAvailable: true,
+      sourceCodeUrl: 'https://github.com/anhtungbui/React-StockBay',
+      hasLiveDemo: true,
+      liveDemoUrl: 'https://stockbay.anhtungbui.com/'
     }
   ];
 

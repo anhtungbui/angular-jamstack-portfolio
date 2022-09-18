@@ -6,5 +6,7 @@ export interface Project {
   technologies: Technology[];
   screenshot: string;
   isSourceCodeAvailable?: boolean;
-  liveDemo?: string;
+  sourceCodeUrl?: string;
+  hasLiveDemo?: boolean;
+  liveDemoUrl?: string;
 }
