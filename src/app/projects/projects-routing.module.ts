@@ -11,8 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ProjectListComponent,
-        pathMatch: 'full'
+        component: ProjectListComponent
       },
       {
         path: ':id',

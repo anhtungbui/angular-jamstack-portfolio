@@ -49,7 +49,7 @@
     </div>
 
     <!-- LEARN MORE -->
-    <button (click)="$event.stopPropagation(); onLearnMore(project)">Learn more</button>
+    <a [routerLink]="['/projects', project.title.toLowerCase()]">Learn more</a>
   </ng-template>
   <!-- End of CARD -->
 </ng-container>
