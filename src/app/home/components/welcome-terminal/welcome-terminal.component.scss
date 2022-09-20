@@ -1,4 +1,4 @@
-/** Code Editor Mockup 
+/** [VENDOR] Code Editor Mockup 
 Author: Satyajit Sahoo
 Source: https://codepen.io/satya164/pen/Hpybt
 **/
@@ -55,4 +55,21 @@ Source: https://codepen.io/satya164/pen/Hpybt
   height: 25em;
   background: black;
   position: relative;
+}
+
+/* COMPONENT CSS */
+.window-content {
+  .text-typed {
+    font-size: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .text-padding {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
 }
