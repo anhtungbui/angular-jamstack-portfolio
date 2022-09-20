@@ -1,0 +1,5 @@
+@function convertPxToRem($pxValue) {
+  $remValue: ($pxValue / 16) + rem;
+
+  @return $remValue;
+}
