@@ -33,6 +33,7 @@
     "@scullyio/scully-plugin-puppeteer": "^2.1.36",
     "lottie-web": "^5.9.6",
     "ng-zorro-antd": "14.0.0",
+    "ngx-lottie": "^9.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "typed.js": "^2.0.12",
