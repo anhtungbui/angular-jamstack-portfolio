@@ -7,6 +7,8 @@
   --nz-red: #ff4d4f;
   --nz-green: #52c41a;
   --nz-gray: #9e9e9e;
+  --nz-gray-lighter: #ebebeb;
+  --nz-gray-darker: #797979;
 }
 
 /* For debugging */
@@ -18,6 +20,10 @@
   border: 1px solid blue;
 }
 
-.dd {
+.ddd {
   border: 1px solid green;
+}
+
+.dddd {
+  border: 1px solid yellow;
 }

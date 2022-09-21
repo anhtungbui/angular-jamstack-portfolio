@@ -1,0 +1,39 @@
+.container {
+  background: black;
+  color: var(--nz-gray-lighter);
+}
+
+.content-right {
+  padding: 4rem 0;
+
+  .cta-heading {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    color: var(--nz-gray-lighter);
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      color: white;
+    }
+
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.credits {
+  text-align: center;
+  color: var(--nz-gray-darker);
+
+  p {
+    border-top: 1px solid #515151;
+    margin: 0 10%;
+    padding: 1rem;
+  }
+}
