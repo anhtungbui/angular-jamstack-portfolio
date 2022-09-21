@@ -1,5 +1,16 @@
 <app-header></app-header>
 
-<section class="container">
-  <router-outlet></router-outlet>
-</section>
+<main class="container" nz-row>
+  <section
+    class="content"
+    nz-col
+    [nzXs]="{ span: 22, offset: 1 }"
+    [nzSm]="{ span: 22, offset: 1 }"
+    [nzMd]="{ span: 22, offset: 1 }"
+    [nzLg]="{ span: 20, offset: 2 }"
+    [nzXl]="{ span: 18, offset: 3 }"
+    [nzXXl]="{ span: 12, offset: 6 }"
+  >
+    <router-outlet></router-outlet>
+  </section>
+</main>

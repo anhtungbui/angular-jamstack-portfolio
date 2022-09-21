@@ -1,22 +1,31 @@
 <header class="container">
   <nav class="navbar" nz-row>
-    <div class="logo" nz-col nzSpan="8">
-      <a routerLink="/">
-        <img src="assets/img/brandings/ducky-512.png" alt="logo" />
-        <span>Anh Tung Bui · Web Developer</span>
-      </a>
-    </div>
+    <div
+      class="content"
+      nz-col
+      [nzXs]="{ span: 22, offset: 1 }"
+      [nzSm]="{ span: 22, offset: 1 }"
+      [nzMd]="{ span: 22, offset: 1 }"
+      [nzLg]="{ span: 20, offset: 2 }"
+      [nzXl]="{ span: 18, offset: 3 }"
+      [nzXXl]="{ span: 12, offset: 6 }"
+    >
+      <div class="logo">
+        <a routerLink="/">
+          <img src="assets/img/brandings/ducky-512.png" alt="logo" />
+          <span>Anh Tung Bui · Web Developer</span>
+        </a>
+      </div>
 
-    <div class="spacer"></div>
-
-    <div class="link-container" nzSpan="8">
-      <a class="link" routerLink="/about" routerLinkActive="active-link">About</a>
-      <a class="link" routerLink="/projects" routerLinkActive="active-link">Projects</a>
-      <!-- <a class="link" routerLink="/projects" routerLinkActive="active-link">Contact</a> -->
-      <a class="link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
-        Download CV
-      </a>
-      <a class="link" routerLink="/blog" routerLinkActive="active-link">Blog</a>
+      <div class="link-container">
+        <a class="link" routerLink="/about" routerLinkActive="active-link">About</a>
+        <a class="link" routerLink="/projects" routerLinkActive="active-link">Projects</a>
+        <!-- <a class="link" routerLink="/projects" routerLinkActive="active-link">Contact</a> -->
+        <a class="link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
+          CV
+        </a>
+        <a class="link" routerLink="/blog" routerLinkActive="active-link">Blog</a>
+      </div>
     </div>
   </nav>
 </header>

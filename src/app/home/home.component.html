@@ -1,6 +1,15 @@
 <app-header></app-header>
 
-<section class="container">
-  <!-- <app-welcome-terminal></app-welcome-terminal> -->
-  <app-hero></app-hero>
-</section>
+<main class="container" nz-row>
+  <section
+    nz-col
+    [nzXs]="{ span: 22, offset: 1 }"
+    [nzSm]="{ span: 22, offset: 1 }"
+    [nzMd]="{ span: 22, offset: 1 }"
+    [nzLg]="{ span: 20, offset: 2 }"
+    [nzXl]="{ span: 18, offset: 3 }"
+    [nzXXl]="{ span: 12, offset: 6 }"
+  >
+    <app-hero></app-hero>
+  </section>
+</main>

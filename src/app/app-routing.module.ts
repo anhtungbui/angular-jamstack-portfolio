@@ -5,22 +5,22 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
-    title: 'Home'
+    title: 'Anh Tung Bui - Web Developer'
   },
   {
     path: 'blog',
     loadChildren: () => import('./blog/blog.module').then((m) => m.BlogModule),
-    title: 'Blog'
+    title: 'Blog - Anh Tung Bui'
   },
   {
     path: 'projects',
     loadChildren: () => import('./projects/projects.module').then((m) => m.ProjectsModule),
-    title: 'Projects'
+    title: 'Projects - Anh Tung Bui'
   },
   {
     path: 'about',
     loadChildren: () => import('./about/about.module').then((m) => m.AboutModule),
-    title: 'About'
+    title: 'About - Anh Tung Bui'
   }
   // FIXME:
   // { path: '**', redirectTo: '' }
