@@ -6,14 +6,14 @@ import player from 'lottie-web';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { WelcomeTerminalComponent } from './components/welcome-terminal/welcome-terminal.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 export function playerFactory(): any {
   return player;
 }
 
 @NgModule({
-  declarations: [HomeComponent, WelcomeTerminalComponent],
+  declarations: [HomeComponent, HeroComponent],
   imports: [
     SharedModule,
     HomeRoutingModule,
