@@ -12,13 +12,23 @@ import player from 'lottie-web';
 import { HomeComponent } from './home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { ProjectListComponent } from './components/project-list/project-list.component';
 
 export function playerFactory(): any {
   return player;
 }
 
 @NgModule({
-  declarations: [HomeComponent, HeroComponent, AboutComponent],
+  declarations: [
+    HomeComponent,
+    HeroComponent,
+    AboutComponent,
+    ProjectCardComponent,
+    ProjectDetailComponent,
+    ProjectListComponent
+  ],
   imports: [
     SharedModule,
     HomeRoutingModule,

@@ -4,12 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzAffixModule } from 'ng-zorro-antd/affix';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import {
   LinkedinFill,
   GithubFill,
@@ -27,6 +28,7 @@ const icons = [LinkedinFill, GithubFill, MailOutline, StarOutline];
     RouterModule,
     NzGridModule,
     NzButtonModule,
+    NzAffixModule,
     NzIconModule.forRoot(icons)
   ],
   exports: [
