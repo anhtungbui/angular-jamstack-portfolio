@@ -10,9 +10,14 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { LinkedinFill, GithubFill, MailOutline } from '@ant-design/icons-angular/icons';
+import {
+  LinkedinFill,
+  GithubFill,
+  MailOutline,
+  StarOutline
+} from '@ant-design/icons-angular/icons';
 
-const icons = [LinkedinFill, GithubFill, MailOutline];
+const icons = [LinkedinFill, GithubFill, MailOutline, StarOutline];
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],

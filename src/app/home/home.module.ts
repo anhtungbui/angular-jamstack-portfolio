@@ -3,6 +3,7 @@ import { SharedModule } from '../shared/shared.module';
 import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
 import { HomeRoutingModule } from './home-routing.module';
 import { NzTagModule } from 'ng-zorro-antd/tag';
+
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 

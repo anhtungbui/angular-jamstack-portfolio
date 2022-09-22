@@ -15,6 +15,6 @@ export class HeroComponent {
   constructor() {}
 
   onAnimate(animationItem: AnimationItem): void {
-    console.log(animationItem);
+    // console.log(animationItem);
   }
 }
