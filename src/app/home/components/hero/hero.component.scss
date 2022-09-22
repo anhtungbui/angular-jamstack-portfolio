@@ -1,0 +1,29 @@
+.content-left {
+  padding-top: 5rem;
+
+  h1 {
+    color: var(--nz-blue);
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+
+  .blinking-cursor {
+    color: var(--nz-blue);
+    animation: blink 2s infinite;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,5 +1,9 @@
 @use 'src/styles/functions';
 
+.container {
+  margin-bottom: 3rem;
+}
+
 .navbar {
   padding: 1rem;
   height: functions.convertPxToRem(70);
