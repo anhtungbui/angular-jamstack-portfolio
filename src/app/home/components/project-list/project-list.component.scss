@@ -1,3 +1,11 @@
 .container {
   padding: 5rem 0;
 }
+
+.header {
+  padding-bottom: 2rem;
+
+  p {
+    color: var(--nz-gray);
+  }
+}
