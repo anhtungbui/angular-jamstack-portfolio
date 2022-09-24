@@ -12,8 +12,13 @@
     >
       <div class="logo">
         <a routerLink="/">
-          <img src="assets/img/brandings/ducky-512.png" alt="logo" />
-          <span>Anh Tung Bui · Web Developer</span>
+          <!-- FIXME: -->
+          <!-- <img src="assets/img/brandings/ducky-512.png" alt="logo" /> -->
+
+          <span
+            >Anh Tung Bui
+            <span class="display-xs-none">· Web Developer</span>
+          </span>
         </a>
       </div>
 
@@ -41,6 +46,7 @@
         nzPlacement="bottomRight"
       >
         <span nz-icon nzType="menu" nzTheme="outline"></span>
+        Menu
       </button>
 
       <nz-dropdown-menu class="dropdown-menu" #menu="nzDropdownMenu">

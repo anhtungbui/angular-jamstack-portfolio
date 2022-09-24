@@ -1,5 +1,11 @@
+@use 'src/styles/variables';
+
 .container {
   padding: 10rem 0;
+
+  @media screen and (max-width: variables.$nz-sm) {
+    padding: 2rem 0;
+  }
 }
 
 .content-left {
@@ -12,6 +18,10 @@
   h2 {
     font-size: 4rem;
     line-height: 1.1;
+
+    @media screen and (max-width: variables.$nz-sm) {
+      font-size: 3rem;
+    }
   }
 
   .blinking-cursor {
