@@ -4,6 +4,22 @@
   color: var(--nz-gray-lighter);
 }
 
+.content {
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-left {
+  height: 100%;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
 .content-right {
   padding: 4rem 0;
 

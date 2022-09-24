@@ -1,6 +1,14 @@
 <section class="container" nz-row>
   <!-- CONTENT LEFT -->
-  <div class="content-left" nz-col nzSpan="12">
+  <div
+    class="content-left"
+    nz-col
+    nzSpan="12"
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 24 }"
+    [nzMd]="{ span: 24 }"
+    [nzLg]="{ span: 12 }"
+  >
     <h1>Hi, I'm Anh Tung Bui 👋</h1>
     <h2>I love building web apps<span class="blinking-cursor">|</span></h2>
 
@@ -22,7 +30,14 @@
   </div>
 
   <!-- CONTENT RIGHT -->
-  <div class="content-right" nz-col nzSpan="12">
+  <div
+    class="content-right"
+    nz-col
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 20 }"
+    [nzMd]="{ span: 16 }"
+    [nzLg]="{ span: 12 }"
+  >
     <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"> </ng-lottie>
   </div>
 </section>

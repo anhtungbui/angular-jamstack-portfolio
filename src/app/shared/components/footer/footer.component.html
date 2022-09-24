@@ -1,8 +1,10 @@
 <footer class="container">
-  <div class="content" nz-row>
-    <div class="content-left" nz-col [nzSpan]="6" nzOffset="2"></div>
+  <div class="content">
+    <div class="content-left">
+      <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"> </ng-lottie>
+    </div>
 
-    <div class="content-right" nz-col>
+    <div class="content-right">
       <h3 class="cta-heading">Contact me</h3>
 
       <!-- ICONS -->

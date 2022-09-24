@@ -20,7 +20,6 @@
 }
 
 .logo {
-  flex-basis: 50%;
   max-height: 100%;
 
   a {
@@ -34,11 +33,19 @@
   }
 }
 
+.spacer {
+  flex: 1;
+}
+
 .link-container {
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
   .link {
     color: black;

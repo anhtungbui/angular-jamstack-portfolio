@@ -6,6 +6,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzAffixModule } from 'ng-zorro-antd/affix';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -18,6 +19,13 @@ import {
   StarOutline
 } from '@ant-design/icons-angular/icons';
 
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory(): any {
+  return player;
+}
+
 const icons = [LinkedinFill, GithubFill, MailOutline, StarOutline];
 
 @NgModule({
@@ -29,7 +37,9 @@ const icons = [LinkedinFill, GithubFill, MailOutline, StarOutline];
     NzGridModule,
     NzButtonModule,
     NzAffixModule,
-    NzIconModule.forRoot(icons)
+    NzDividerModule,
+    NzIconModule.forRoot(icons),
+    LottieModule.forRoot({ player: playerFactory })
   ],
   exports: [
     CommonModule,
