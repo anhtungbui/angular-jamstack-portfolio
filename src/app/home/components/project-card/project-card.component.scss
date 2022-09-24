@@ -1,0 +1,13 @@
+.card-title {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    margin-left: 0.5rem;
+  }
+}
+
+.screenshot {
+  max-width: 100%;
+  height: auto;
+}
