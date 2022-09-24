@@ -1,3 +1,15 @@
-<section id="projects">
-  <p>project-list works</p>
+<section id="projects" class="container">
+  <!-- HEADER -->
+  <h1>Projects</h1>
+  <p>
+    I always keep a side project running to keep my programming skills in shape. Writing clean,
+    maintainable, and scalable code are my goals.
+  </p>
+
+  <!-- CONTENT -->
+  <div nz-row *ngIf="projects$ | async as projects">
+    <div nz-col nzSpan="12" *ngFor="let project of projects">
+      <app-project-card [project]="project"></app-project-card>
+    </div>
+  </div>
 </section>

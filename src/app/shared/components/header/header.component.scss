@@ -2,8 +2,10 @@
 
 .container {
   position: fixed;
-  top: 0;
   width: 100%;
+  z-index: 1;
+  background-color: rgba(white, 0.4);
+  backdrop-filter: blur(20px);
 }
 
 .navbar {

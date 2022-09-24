@@ -11,12 +11,12 @@ const routes: Routes = [
     path: 'blog',
     loadChildren: () => import('./blog/blog.module').then((m) => m.BlogModule),
     title: 'Blog - Anh Tung Bui'
-  },
-  {
-    path: 'projects',
-    loadChildren: () => import('./projects/projects.module').then((m) => m.ProjectsModule),
-    title: 'Projects - Anh Tung Bui'
   }
+  // {
+  //   path: 'projects',
+  //   loadChildren: () => import('./projects/projects.module').then((m) => m.ProjectsModule),
+  //   title: 'Projects - Anh Tung Bui'
+  // }
   // FIXME:
   // { path: '**', redirectTo: '' }
 ];

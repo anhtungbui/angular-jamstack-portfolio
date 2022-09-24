@@ -5,6 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
@@ -36,6 +38,8 @@ export function playerFactory(): any {
     NzTagModule,
     NzAvatarModule,
     NzTimelineModule,
+    NzModalModule,
+    NzDividerModule,
     LottieModule.forRoot({ player: playerFactory })
   ]
 })
