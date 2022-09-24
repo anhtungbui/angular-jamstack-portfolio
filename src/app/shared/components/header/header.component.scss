@@ -46,18 +46,33 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+}
 
-  .link {
-    color: black;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
+.link {
+  color: black;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
 
-    &:hover {
-      background: rgb(248 250 252);
-    }
+  &:hover {
+    background: rgb(248 250 252);
   }
+}
 
-  .active-link {
-    color: var(--nz-blue);
+.active-link {
+  color: var(--nz-blue);
+}
+
+.link-container-dropdown {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+::ng-deep .ant-dropdown {
+  ul > li {
+    width: 10rem;
+    height: 3rem;
   }
 }

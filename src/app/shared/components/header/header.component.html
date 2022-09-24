@@ -30,6 +30,39 @@
         </a>
         <!-- <a class="link" routerLink="/blog" routerLinkActive="active-link">Blog</a> -->
       </div>
+
+      <!-- DROPDOWN -->
+      <button
+        class="link-container-dropdown"
+        nz-button
+        nzType="link"
+        nz-dropdown
+        [nzDropdownMenu]="menu"
+        nzPlacement="bottomRight"
+      >
+        <span nz-icon nzType="menu" nzTheme="outline"></span>
+      </button>
+
+      <nz-dropdown-menu class="dropdown-menu" #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>
+            <a class="link" href="/#" [class.active-link]="!fragment"> Home </a>
+          </li>
+          <li nz-menu-item>
+            <a class="link" href="#about" [class.active-link]="fragment === 'about'">About</a>
+          </li>
+          <li nz-menu-item>
+            <a class="link" href="#projects" [class.active-link]="fragment === 'projects'"
+              >Projects</a
+            >
+          </li>
+          <li nz-menu-item nzDanger>
+            <a class="link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
+              CV
+            </a>
+          </li>
+        </ul>
+      </nz-dropdown-menu>
     </div>
   </nav>
 </header>
