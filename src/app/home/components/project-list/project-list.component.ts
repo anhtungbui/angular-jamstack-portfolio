@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Project } from 'src/app/projects/interfaces/project.interface';
-import { ProjectService } from 'src/app/projects/services/project.service';
+import { Project } from 'src/app/home/interfaces/project.interface';
+import { ProjectService } from 'src/app/home/services/project.service';
 
 @Component({
   selector: 'app-project-list',

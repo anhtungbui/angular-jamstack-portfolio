@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { Project } from '../../interfaces/project.interface';
+import { Project } from '../../../home/interfaces/project.interface';
 
 @Component({
   selector: 'app-project-card',

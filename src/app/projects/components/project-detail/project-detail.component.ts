@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map, Observable, tap } from 'rxjs';
-import { Project } from '../../interfaces/project.interface';
-import { ProjectService } from '../../services/project.service';
+import { Project } from '../../../home/interfaces/project.interface';
+import { ProjectService } from '../../../home/services/project.service';
 
 @Component({
   selector: 'app-project-detail',
