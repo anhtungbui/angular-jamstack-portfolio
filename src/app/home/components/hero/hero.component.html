@@ -1,7 +1,7 @@
-<section class="container" nz-row>
+<section class="hero" nz-row>
   <!-- CONTENT LEFT -->
   <div
-    class="content-left"
+    class="hero__texts"
     nz-col
     nzSpan="12"
     [nzXs]="{ span: 24 }"
@@ -9,17 +9,19 @@
     [nzMd]="{ span: 24 }"
     [nzLg]="{ span: 12 }"
   >
-    <h1>Hi, I'm Anh Tung (Anton) 👋</h1>
-    <h2>I love building web apps<span class="blinking-cursor">|</span></h2>
+    <h1 class="hero__heading">Hi, I'm Anh Tung (Anton) 👋</h1>
+    <h2 class="hero__subheading">
+      I love building web apps<span class="hero__blinking-cursor">|</span>
+    </h2>
 
-    <div class="tags">
+    <div class="hero__tags">
       <nz-tag nzColor="#9e9e9e">JavaScript</nz-tag>
       <nz-tag nzColor="#9e9e9e">TypeScript</nz-tag>
       <nz-tag nzColor="#9e9e9e">Angular</nz-tag>
       <nz-tag nzColor="#9e9e9e">Node.js</nz-tag>
     </div>
 
-    <div class="cta">
+    <div class="hero__cta">
       <button nz-button nzType="primary">
         <a href="/#projects">
           <span nz-icon nzType="star" nzTheme="outline"></span>
@@ -31,7 +33,7 @@
 
   <!-- CONTENT RIGHT -->
   <div
-    class="content-right"
+    class="hero__illustration"
     nz-col
     [nzXs]="{ span: 24 }"
     [nzSm]="{ span: 20 }"

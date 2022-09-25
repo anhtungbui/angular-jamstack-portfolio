@@ -1,6 +1,6 @@
 @use 'src/styles/variables';
 
-.container {
+.hero {
   padding: 10rem 0;
 
   @media screen and (max-width: variables.$nz-sm) {
@@ -8,33 +8,30 @@
   }
 }
 
-.content-left {
+.hero__texts {
   padding-top: 5rem;
+}
 
-  h1 {
-    color: var(--nz-blue);
+.hero__heading {
+  color: var(--nz-blue);
+}
+
+.hero__subheading {
+  font-size: 4rem;
+  line-height: 1.1;
+
+  @media screen and (max-width: variables.$nz-sm) {
+    font-size: 3rem;
   }
+}
 
-  h2 {
-    font-size: 4rem;
-    line-height: 1.1;
+.hero__blinking-cursor {
+  color: var(--nz-blue);
+  animation: blink 2s infinite;
+}
 
-    @media screen and (max-width: variables.$nz-sm) {
-      font-size: 3rem;
-    }
-  }
-
-  .blinking-cursor {
-    color: var(--nz-blue);
-    animation: blink 2s infinite;
-  }
-
-  .tags {
-  }
-
-  .cta {
-    padding-top: 1rem;
-  }
+.hero__cta {
+  padding-top: 1rem;
 }
 
 @keyframes blink {
