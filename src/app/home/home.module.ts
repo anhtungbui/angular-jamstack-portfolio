@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 export function playerFactory(): any {
   return player;
@@ -29,7 +30,8 @@ export function playerFactory(): any {
     AboutComponent,
     ProjectCardComponent,
     ProjectDetailComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    AvatarComponent
   ],
   imports: [
     SharedModule,
