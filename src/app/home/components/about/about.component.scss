@@ -2,6 +2,13 @@
   padding: 5rem 0;
 }
 
+.about__content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .about__heading {
   text-align: center;
   padding: 0 0 1rem 0;

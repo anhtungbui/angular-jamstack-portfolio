@@ -1,82 +1,94 @@
-<section
-  id="about"
-  class="about"
-  nz-col
-  [nzXs]="{ span: 22, offset: 1 }"
-  [nzSm]="{ span: 22, offset: 1 }"
-  [nzMd]="{ span: 22, offset: 1 }"
-  [nzLg]="{ span: 20, offset: 2 }"
-  [nzXl]="{ span: 18, offset: 3 }"
-  [nzXXl]="{ span: 12, offset: 6 }"
->
-  <h1 class="about__heading">About me</h1>
+<section id="about" class="about" nz-row>
+  <!-- CONTENT LEFT -->
+  <div
+    class="about__content-left"
+    nz-col
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 24 }"
+    [nzMd]="{ span: 10 }"
+    [nzLg]="{ span: 12 }"
+  >
+    <h1 class="about__heading">About me</h1>
 
-  <!-- AVATAR -->
-  <app-avatar></app-avatar>
+    <!-- AVATAR -->
+    <app-avatar></app-avatar>
+  </div>
+  <!-- End of CONTENT LEFT -->
 
-  <nz-timeline>
-    <nz-timeline-item [nzDot]="dotTemplate">
-      <p>Sep 2013</p>
-      <p>Graduated Business Administration <b>with honors</b>🎖</p>
-    </nz-timeline-item>
+  <!-- CONTENT RIGHT -->
+  <div
+    class="about__content-right"
+    nz-col
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 24 }"
+    [nzMd]="{ span: 14 }"
+    [nzLg]="{ span: 12 }"
+  >
+    <nz-timeline>
+      <nz-timeline-item [nzDot]="dotTemplate">
+        <p>Sep 2013</p>
+        <p>Graduated Business Administration <b>with honors</b>🎖</p>
+      </nz-timeline-item>
 
-    <nz-timeline-item nzColor="blue">
-      <p>Worked in <b>Digital Marketing</b> industry 🤓</p>
-    </nz-timeline-item>
+      <nz-timeline-item nzColor="blue">
+        <p>Worked in <b>Digital Marketing</b> industry 🤓</p>
+      </nz-timeline-item>
 
-    <nz-timeline-item [nzDot]="dotTemplate">
-      <p>Sep 2019</p>
-      <p>
-        Tried to
-        <a href="https://www.freecodecamp.org/learn/" target="_blank">learn coding online</a>
-        for the <b>first time</b> 😱
-      </p>
-    </nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate">
+        <p>Sep 2019</p>
+        <p>
+          Tried to
+          <a href="https://www.freecodecamp.org/learn/" target="_blank">learn coding online</a>
+          for the <b>first time</b> 😱
+        </p>
+      </nz-timeline-item>
 
-    <nz-timeline-item nzColor="blue">
-      <p><b>Kept building</b> mini JavaScript apps in free time 🔥</p>
-    </nz-timeline-item>
+      <nz-timeline-item nzColor="blue">
+        <p><b>Kept building</b> mini JavaScript apps in free time 🔥</p>
+      </nz-timeline-item>
 
-    <nz-timeline-item [nzDot]="dotTemplate">
-      <p>March 2020</p>
-      <p>Decided to <b>switch career</b> and join coding school 🛠</p>
-    </nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate">
+        <p>March 2020</p>
+        <p>Decided to <b>switch career</b> and join coding school 🛠</p>
+      </nz-timeline-item>
 
-    <nz-timeline-item nzColor="blue">
-      <p>Eaten, slept, coded for <b>12+ hours per day</b></p>
-      <p>Repeated for more than a year 💻</p>
-    </nz-timeline-item>
+      <nz-timeline-item nzColor="blue">
+        <p>Eaten, slept, coded for <b>12+ hours per day</b></p>
+        <p>Repeated for more than a year 💻</p>
+      </nz-timeline-item>
 
-    <nz-timeline-item [nzDot]="dotTemplate">
-      <p>August 2020</p>
-      <p>
-        <b>Web Development Tutor</b> at
-        <a hrer="https://digitalcareerinstitute.org/">Digital Career Institute gGmbH</a> 👨🏻‍💻
-      </p>
-    </nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate">
+        <p>August 2020</p>
+        <p>
+          <b>Web Development Tutor</b> at
+          <a hrer="https://digitalcareerinstitute.org/">Digital Career Institute gGmbH</a> 👨🏻‍💻
+        </p>
+      </nz-timeline-item>
 
-    <nz-timeline-item nzColor="blue">
-      Became
-      <a href="assets/pdf/Zertifikat_Webentwickler_Anh_Tung_Bui.pdf" target="_blank">
-        Certified Web Developer
-      </a>
-      <b>in Germany</b> 🇩🇪
-    </nz-timeline-item>
+      <nz-timeline-item nzColor="blue">
+        Became
+        <a href="assets/pdf/Zertifikat_Webentwickler_Anh_Tung_Bui.pdf" target="_blank">
+          Certified Web Developer
+        </a>
+        <b>in Germany</b> 🇩🇪
+      </nz-timeline-item>
 
-    <nz-timeline-item [nzDot]="dotTemplate">
-      <p>March 2021</p>
-      <p>
-        <b>Frontend Developer</b> at
-        <a href="https://nextmarkets.com" target="_blank">nextmarkets AG</a> 🌈
-      </p>
-    </nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate">
+        <p>March 2021</p>
+        <p>
+          <b>Frontend Developer</b> at
+          <a href="https://nextmarkets.com" target="_blank">nextmarkets AG</a> 🌈
+        </p>
+      </nz-timeline-item>
 
-    <nz-timeline-item nzColor="red">
-      <p><b>Never</b> stop learning 🎯</p>
-    </nz-timeline-item>
-  </nz-timeline>
+      <nz-timeline-item nzColor="red">
+        <p><b>Never</b> stop learning 🎯</p>
+      </nz-timeline-item>
+    </nz-timeline>
 
-  <ng-template #dotTemplate>
-    <span nz-icon nzType="clock-circle-o" style="font-size: 16px"></span>
-  </ng-template>
+    <ng-template #dotTemplate>
+      <span nz-icon nzType="clock-circle-o" style="font-size: 16px"></span>
+    </ng-template>
+  </div>
+  <!-- End of CONTENT RIGHT   -->
 </section>
