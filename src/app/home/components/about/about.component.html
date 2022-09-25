@@ -1,6 +1,6 @@
 <section
   id="about"
-  class="container"
+  class="about"
   nz-col
   [nzXs]="{ span: 22, offset: 1 }"
   [nzSm]="{ span: 22, offset: 1 }"
@@ -9,17 +9,17 @@
   [nzXl]="{ span: 18, offset: 3 }"
   [nzXXl]="{ span: 12, offset: 6 }"
 >
-  <h1 class="heading">About me</h1>
+  <h1 class="about__heading">About me</h1>
 
   <!-- AVATAR -->
-  <div class="avatar-container">
+  <div class="about__avatar">
     <nz-avatar nzIcon="user" nzSrc="assets/img/personal-avatar.jpeg" [nzSize]="200"></nz-avatar>
 
-    <h2 class="subheading">Anh Tung Bui</h2>
-    <p class="text-bio">I love programming and I'm a lifelong learner</p>
+    <h2 class="about__title">Anh Tung Bui</h2>
+    <p class="about__description">I love programming and I'm a lifelong learner</p>
   </div>
 
-  <nz-timeline nzMode="alternate">
+  <nz-timeline>
     <nz-timeline-item [nzDot]="dotTemplate">
       <p>Sep 2013</p>
       <p>Graduated Business Administration <b>with honors</b>🎖</p>
