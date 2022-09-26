@@ -20,6 +20,7 @@ import { ProjectDetailComponent } from './components/project-detail/project-deta
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { LoaderComponent } from './loader/loader.component';
+import { TagComponent } from './components/tag/tag.component';
 
 export function playerFactory(): any {
   return player;
@@ -34,7 +35,8 @@ export function playerFactory(): any {
     ProjectDetailComponent,
     ProjectListComponent,
     AvatarComponent,
-    LoaderComponent
+    LoaderComponent,
+    TagComponent
   ],
   imports: [
     SharedModule,
