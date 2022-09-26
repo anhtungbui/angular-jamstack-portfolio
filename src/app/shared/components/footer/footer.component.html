@@ -1,4 +1,4 @@
-<footer class="container">
+<footer class="footer">
   <div class="content" nzRow>
     <div
       class="layout"
@@ -11,9 +11,9 @@
       [nzXXl]="{ span: 12, offset: 6 }"
     >
       <!-- FOOTER-TOP -->
-      <div class="footer-top" nzRow>
+      <div class="footer__top" nzRow>
         <div
-          class="content-left"
+          class="footer__top-left"
           nz-col
           [nzXs]="{ span: 12, offset: 2 }"
           [nzXl]="{ span: 10, offset: 4 }"
@@ -21,22 +21,22 @@
           <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"> </ng-lottie>
         </div>
 
-        <div class="content-right" nz-col [nzXl]="{ offset: 1 }">
-          <h3 class="cta-heading">Contact me</h3>
+        <div class="footer__top-right" nz-col [nzXl]="{ offset: 1 }">
+          <h3 class="footer__heading">Contact me</h3>
 
           <!-- ICONS -->
-          <div class="links-container">
-            <a class="link" href="mailto:anhtung.bui@gmail.com">
+          <div class="footer__links">
+            <a class="footer__link" href="mailto:anhtung.bui@gmail.com">
               <span nz-icon nzType="mail" nzTheme="outline" style="font-size: 22px"></span>
               Email
             </a>
 
-            <a class="link" href="https://www.linkedin.com/in/anhtungbui">
+            <a class="footer__link" href="https://www.linkedin.com/in/anhtungbui">
               <span nz-icon nzType="linkedin" nzTheme="fill" style="font-size: 22px"></span>
               LinkedIn
             </a>
 
-            <a class="link" href="https://github.com/anhtungbui">
+            <a class="footer__link" href="https://github.com/anhtungbui">
               <span nz-icon nzType="github" nzTheme="fill" style="font-size: 22px"></span>
               GitHub
             </a>
@@ -46,8 +46,8 @@
       <!-- End of FOOTER-TOP -->
 
       <!-- FOOTER-BOTTOM -->
-      <div class="footer-bottom credits">
-        <p>Made with ❤ from Germany 🇩🇪</p>
+      <div class="footer__bottom credits">
+        <p class="footer__credits">Made with ❤ from Germany 🇩🇪</p>
       </div>
     </div>
   </div>
