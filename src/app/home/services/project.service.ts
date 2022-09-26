@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, ReplaySubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { Technology } from '../enums/technology.enum';
 import { Project } from '../interfaces/project.interface';
 
@@ -13,7 +13,7 @@ export class ProjectService {
     {
       title: 'Larabook',
       description: 'A social network app inspired by Facebook built with PHP Laravel',
-      technologies: [Technology.PHP, Technology.MYSQL],
+      technologies: [Technology.PHP, Technology.MYSQL, Technology.CSS],
       screenshot: 'assets/img/projects/larabook-screenshot.png',
       isSourceCodeAvailable: false,
       hasLiveDemo: false
@@ -21,12 +21,36 @@ export class ProjectService {
     {
       title: 'StockBay',
       description: 'A modern information hub for stock traders 📚',
-      technologies: [Technology.JAVASCRIPT, Technology.REACT],
+      technologies: [Technology.JAVASCRIPT, Technology.REACT, Technology.SASS],
       screenshot: 'assets/img/projects/stockbay-screenshot.png',
       isSourceCodeAvailable: true,
       sourceCodeUrl: 'https://github.com/anhtungbui/React-StockBay',
       hasLiveDemo: true,
       liveDemoUrl: 'https://stockbay.anhtungbui.com/'
+    },
+    {
+      title: 'Jamstack Portfolio',
+      description: 'A minimalist design portfolio built with modern Jamstack architecture',
+      technologies: [
+        Technology.TYPESCRIPT,
+        Technology.ANGULAR,
+        Technology.STATIC_SITE_GENERATOR,
+        Technology.SASS
+      ],
+      screenshot: 'assets/img/projects/jamstack-portfolio-screenshot.png',
+      isSourceCodeAvailable: false,
+      hasLiveDemo: false
+    },
+    {
+      title: 'iSass Landing Page',
+      description:
+        "A 1:1 clone of Apple.com's landing page as of July 2020 for the sake of mastering the Sass language 🍎",
+      technologies: [Technology.SASS],
+      screenshot: 'assets/img/projects/isass-screenshot.png',
+      isSourceCodeAvailable: true,
+      sourceCodeUrl: 'https://github.com/anhtungbui/apple-iSass',
+      hasLiveDemo: true,
+      liveDemoUrl: '#'
     }
   ];
 
