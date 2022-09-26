@@ -9,7 +9,7 @@
 }
 
 .hero__texts {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .hero__heading {
@@ -28,6 +28,15 @@
 .hero__blinking-cursor {
   color: var(--nz-blue);
   animation: blink 2s infinite;
+}
+
+.hero__summary {
+  color: var(--nz-gray);
+  line-height: 1;
+}
+
+.hero__tags {
+  padding-top: 1rem;
 }
 
 .hero__cta {
