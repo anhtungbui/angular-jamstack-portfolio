@@ -7,6 +7,7 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
@@ -18,6 +19,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { LoaderComponent } from './loader/loader.component';
 
 export function playerFactory(): any {
   return player;
@@ -31,7 +33,8 @@ export function playerFactory(): any {
     ProjectCardComponent,
     ProjectDetailComponent,
     ProjectListComponent,
-    AvatarComponent
+    AvatarComponent,
+    LoaderComponent
   ],
   imports: [
     SharedModule,
@@ -42,6 +45,7 @@ export function playerFactory(): any {
     NzTimelineModule,
     NzModalModule,
     NzDividerModule,
+    NzSpinModule,
     LottieModule.forRoot({ player: playerFactory })
   ]
 })
