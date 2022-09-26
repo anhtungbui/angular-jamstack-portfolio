@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.05);
+  position: fixed; // This will make sure that the viewport is always blocked even when scrolling
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(white, 0.4);
+  backdrop-filter: blur(20px);
 }
