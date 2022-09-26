@@ -13,3 +13,8 @@
   text-align: center;
   padding: 0 0 1rem 0;
 }
+
+.about__content-right {
+  /* This is necessary because the last item in the timeline was being rendered with padding-bottom of 3.7rem */
+  padding-top: 3.75rem;
+}
