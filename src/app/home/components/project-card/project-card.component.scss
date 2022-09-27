@@ -1,13 +1,17 @@
-.card-title {
-  display: flex;
-  justify-content: space-between;
-
-  button {
-    margin-left: 0.5rem;
-  }
+.project-card {
+  height: 100%;
 }
 
-.screenshot {
+.project-card__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card__button {
+  margin-left: 0.5rem;
+}
+
+.project-card__modal-screenshot {
   max-width: 100%;
   height: auto;
 }

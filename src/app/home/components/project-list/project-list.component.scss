@@ -1,11 +1,13 @@
-.container {
+.project-list {
   padding: 5rem 0;
 }
 
-.header {
+.project-list__header {
   padding-bottom: 2rem;
-
-  p {
-    color: var(--nz-gray);
-  }
 }
+
+.project-list__description {
+  color: var(--nz-gray);
+}
+
+// .project-list__card-container {}
