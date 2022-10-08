@@ -72,6 +72,7 @@
   <!-- RESPONSIVE MENU -->
   <app-responsive-menu
     *ngIf="isResponsiveMenuVisible"
+    [@fadeAnimation]="'in'"
     [fragment]="fragment"
     (selectedFragment)="onScrollToFragment($event)"
   ></app-responsive-menu>
