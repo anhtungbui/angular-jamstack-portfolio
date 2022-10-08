@@ -1,7 +1,7 @@
 @use 'src/styles/functions';
 @use 'src/styles/variables';
 
-.container {
+.header {
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -15,21 +15,17 @@
   box-shadow: 0 2px 8px #f0f1f2;
 }
 
-.content {
+.navbar__layout {
   display: flex;
   align-items: center;
 }
 
-.logo {
-  a {
-    color: black;
-    font-weight: 500;
-  }
-
-  img {
-    max-width: 15%;
-    margin-right: 0.5rem;
-  }
+.navbar__logo {
+  // FIXME:
+  // img {
+  //   max-width: 15%;
+  //   margin-right: 0.5rem;
+  // }
 
   .display-xs-none {
     @media screen and (max-width: variables.$nz-sm) {
@@ -38,11 +34,20 @@
   }
 }
 
-.spacer {
+.navbar__link {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar__link--active {
+  color: var(--nz-blue);
+}
+
+.navbar__layout-spacer {
   flex: 1;
 }
 
-.link-container {
+.navbar__horizontal-menu {
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
@@ -53,9 +58,7 @@
   }
 }
 
-.link {
-  color: black;
-  font-weight: 500;
+.navbar__horizontal-menu-link {
   padding: 0.5rem 1rem;
 
   &:hover {
@@ -63,11 +66,7 @@
   }
 }
 
-.active-link {
-  color: var(--nz-blue);
-}
-
-.link-container-dropdown {
+.navbar__responsive-menu-toggle {
   display: none;
 
   @media screen and (max-width: variables.$nz-md) {

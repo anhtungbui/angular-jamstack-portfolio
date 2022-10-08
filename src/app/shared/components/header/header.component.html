@@ -1,7 +1,7 @@
-<header class="container">
+<header class="header">
   <nav class="navbar" nz-row>
     <div
-      class="content"
+      class="navbar__layout"
       nz-col
       [nzXs]="{ span: 22, offset: 1 }"
       [nzSm]="{ span: 22, offset: 1 }"
@@ -10,34 +10,55 @@
       [nzXl]="{ span: 18, offset: 3 }"
       [nzXXl]="{ span: 12, offset: 6 }"
     >
-      <div class="logo">
-        <a routerLink="/">
+      <div class="navbar__logo">
+        <a class="navbar__link" routerLink="/">
           <!-- FIXME: -->
           <!-- <img src="assets/img/brandings/ducky-512.png" alt="logo" /> -->
 
-          <span
-            >Anh Tung Bui
+          <span>
+            Anh Tung Bui
             <span class="display-xs-none">· Web Developer</span>
           </span>
         </a>
       </div>
 
-      <div class="spacer"></div>
+      <div class="navbar__layout-spacer"></div>
 
       <!-- LINKS -->
-      <div class="link-container">
-        <a class="link" href="/#" [class.active-link]="!fragment"> Home </a>
-        <a class="link" href="#about" [class.active-link]="fragment === 'about'">About</a>
-        <a class="link" href="#projects" [class.active-link]="fragment === 'projects'">Projects</a>
+      <div class="navbar__horizontal-menu">
+        <a
+          class="navbar__link navbar__horizontal-menu-link"
+          href="/#"
+          [class.navbar__link--active]="!fragment"
+        >
+          Home
+        </a>
+        <a
+          class="navbar__link navbar__horizontal-menu-link"
+          href="#about"
+          [class.navbar__link--active]="fragment === 'about'"
+        >
+          About
+        </a>
+        <a
+          class="navbar__link navbar__horizontal-menu-link"
+          href="#projects"
+          [class.navbar__link--active]="fragment === 'projects'"
+        >
+          Projects
+        </a>
         <!-- <a class="link" routerLink="/contact" routerLinkActive="active-link">Contact</a> -->
-        <a class="link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
+        <a
+          class="navbar__link navbar__horizontal-menu-link"
+          href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf"
+          target="_blank"
+        >
           CV
         </a>
       </div>
 
-      <!-- DROPDOWN -->
       <button
-        class="link-container-dropdown"
+        class="navbar__responsive-menu-toggle"
         nz-button
         nzType="link"
         (click)="onToggleResponsiveMenu()"
