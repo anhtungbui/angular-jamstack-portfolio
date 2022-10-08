@@ -1,9 +1,9 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-responsive-menu',
   templateUrl: './responsive-menu.component.html',
-  styleUrls: ['./responsive-menu.component.scss']
+  styleUrls: ['../header/header.component.scss', './responsive-menu.component.scss']
 })
 export class ResponsiveMenuComponent implements OnInit {
   @Input()
