@@ -33,6 +33,10 @@
 .hero__summary {
   color: var(--nz-gray);
   line-height: 1;
+
+  @media screen and (max-width: variables.$nz-sm) {
+    line-height: unset;
+  }
 }
 
 .hero__tags {
