@@ -1,19 +1,33 @@
 <nz-list nzSize="small">
   <nz-list-item (click)="onSelect('#')">
-    <a class="navbar__link" href="/#" [class.navbar__link--active]="!fragment"> Home </a>
+    <a class="navbar__link responsive-menu-link" href="/#" [class.navbar__link--active]="!fragment">
+      Home
+    </a>
   </nz-list-item>
   <nz-list-item (click)="onSelect('about')">
-    <a class="navbar__link" href="#about" [class.navbar__link--active]="fragment === 'about'">
+    <a
+      class="navbar__link responsive-menu-link"
+      href="#about"
+      [class.navbar__link--active]="fragment === 'about'"
+    >
       About
     </a>
   </nz-list-item>
   <nz-list-item (click)="onSelect('#')">
-    <a class="navbar__link" href="#projects" [class.navbar__link--active]="fragment === 'projects'">
+    <a
+      class="navbar__link responsive-menu-link"
+      href="#projects"
+      [class.navbar__link--active]="fragment === 'projects'"
+    >
       Projects
     </a>
   </nz-list-item>
   <nz-list-item>
-    <a class="navbar__link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
+    <a
+      class="navbar__link responsive-menu-link"
+      href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf"
+      target="_blank"
+    >
       CV
     </a>
   </nz-list-item>

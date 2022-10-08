@@ -1,9 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output
+} from '@angular/core';
 
 @Component({
   selector: 'app-responsive-menu',
   templateUrl: './responsive-menu.component.html',
-  styleUrls: ['../header/header.component.scss', './responsive-menu.component.scss']
+  styleUrls: ['../header/header.component.scss', './responsive-menu.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ResponsiveMenuComponent implements OnInit {
   @Input()
