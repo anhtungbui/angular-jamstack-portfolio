@@ -40,34 +40,18 @@
         class="link-container-dropdown"
         nz-button
         nzType="link"
-        nz-dropdown
-        [nzDropdownMenu]="menu"
-        nzPlacement="bottomRight"
+        (click)="onToggleResponsiveMenu()"
       >
         <span nz-icon nzType="menu" nzTheme="outline"></span>
         Menu
       </button>
-
-      <nz-dropdown-menu class="dropdown-menu" #menu="nzDropdownMenu">
-        <ul nz-menu nzSelectable>
-          <li nz-menu-item (click)="onScrollToFragment('#')">
-            <a class="link" href="/#" [class.active-link]="!fragment"> Home </a>
-          </li>
-          <li nz-menu-item (click)="onScrollToFragment('about')">
-            <a class="link" href="#about" [class.active-link]="fragment === 'about'">About</a>
-          </li>
-          <li nz-menu-item (click)="onScrollToFragment('projects')">
-            <a class="link" href="#projects" [class.active-link]="fragment === 'projects'"
-              >Projects</a
-            >
-          </li>
-          <li nz-menu-item nzDanger>
-            <a class="link" href="/assets/pdf/CV_Web_Developer_Anh_Tung_Bui.pdf" target="_blank">
-              CV
-            </a>
-          </li>
-        </ul>
-      </nz-dropdown-menu>
     </div>
   </nav>
+
+  <!-- RESPONSIVE MENU -->
+  <app-responsive-menu
+    *ngIf="isResponsiveMenuVisible"
+    [fragment]="fragment"
+    (selectedFragment)="onScrollToFragment($event)"
+  ></app-responsive-menu>
 </header>

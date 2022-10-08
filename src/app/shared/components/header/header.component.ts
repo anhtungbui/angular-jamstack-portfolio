@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   fragment: string | null = '';
+  isResponsiveMenuVisible: boolean = false;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -28,5 +29,10 @@ export class HeaderComponent implements OnInit {
     }
 
     window.location.hash = fragment as string;
+    this.isResponsiveMenuVisible = false;
+  }
+
+  onToggleResponsiveMenu(): void {
+    this.isResponsiveMenuVisible = !this.isResponsiveMenuVisible;
   }
 }
