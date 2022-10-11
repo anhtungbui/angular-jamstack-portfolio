@@ -10,6 +10,7 @@
     "build:static": "yarn build:remove && ng build && npx scully",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "cypress": "npx cypress open",
     "reformat": "npx prettier --write .",
     "scully": "npx scully",
     "scully:scan": "npx scully --scan",
