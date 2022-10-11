@@ -13,9 +13,16 @@ export class ProjectService {
     {
       title: 'Larabook',
       description: 'A social network app inspired by Facebook built with PHP Laravel',
-      technologies: [Technology.PHP, Technology.MYSQL, Technology.CSS],
+      technologies: [
+        Technology.PHP,
+        Technology.LARAVEL,
+        Technology.LIVEWIRE,
+        Technology.MYSQL,
+        Technology.CSS
+      ],
       screenshot: 'assets/img/projects/larabook-screenshot.png',
-      isSourceCodeAvailable: false,
+      isSourceCodeAvailable: true,
+      sourceCodeUrl: 'https://github.com/anhtungbui/larabook',
       hasLiveDemo: false
     },
     {
@@ -26,7 +33,7 @@ export class ProjectService {
       isSourceCodeAvailable: true,
       sourceCodeUrl: 'https://github.com/anhtungbui/React-StockBay',
       hasLiveDemo: true,
-      liveDemoUrl: 'https://stockbay.anhtungbui.com/'
+      liveDemoUrl: 'https://stockbay.netlify.com/'
     },
     {
       title: 'Jamstack Portfolio',
@@ -35,6 +42,7 @@ export class ProjectService {
         Technology.TYPESCRIPT,
         Technology.ANGULAR,
         Technology.STATIC_SITE_GENERATOR,
+        Technology.CYPRESS,
         Technology.SASS
       ],
       screenshot: 'assets/img/projects/jamstack-portfolio-screenshot.png',
@@ -50,7 +58,7 @@ export class ProjectService {
       isSourceCodeAvailable: true,
       sourceCodeUrl: 'https://github.com/anhtungbui/apple-iSass',
       hasLiveDemo: true,
-      liveDemoUrl: '#'
+      liveDemoUrl: 'https://apple-isass.netlify.app/'
     }
   ];
 

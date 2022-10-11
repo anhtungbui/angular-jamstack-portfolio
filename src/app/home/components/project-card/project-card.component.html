@@ -4,44 +4,15 @@
     class="project-card"
     nzHoverable
     [nzCover]="coverTemplate"
+    [nzActions]="[actionLearnMore, actionLiveDemo, actionSeeCode]"
     (click)="onOpenModal(project)"
   >
-    <nz-card-meta [nzTitle]="titleTemplate" [nzDescription]="descriptionTemplate"></nz-card-meta>
+    <nz-card-meta [nzTitle]="project.title" [nzDescription]="descriptionTemplate"></nz-card-meta>
   </nz-card>
 
   <!-- SCREENSHOT -->
   <ng-template #coverTemplate>
-    <img alt="example" src="{{ project.screenshot }}" />
-  </ng-template>
-
-  <ng-template #titleTemplate>
-    <div class="project-card__title">
-      <h2>{{ project.title }}</h2>
-
-      <span>
-        <!-- LIVE DEMO -->
-        <button
-          class="project-card__button"
-          *ngIf="project.hasLiveDemo && project.liveDemoUrl"
-          nz-button
-          nzType="primary"
-          (click)="onRedirect(project.liveDemoUrl)"
-        >
-          Live demo
-        </button>
-
-        <!-- SEE CODE -->
-        <button
-          class="project-card__button"
-          *ngIf="project.isSourceCodeAvailable && project.sourceCodeUrl"
-          nz-button
-          nzType="default"
-          (click)="onRedirect(project.sourceCodeUrl)"
-        >
-          See code
-        </button>
-      </span>
-    </div>
+    <img alt="example" [src]="project.screenshot" />
   </ng-template>
 
   <ng-template #descriptionTemplate>
@@ -55,9 +26,35 @@
       </app-tag>
     </div>
 
-    <!-- LEARN MORE -->
-    <a [routerLink]="['/projects', project.title.toLowerCase()]">Learn more</a>
+    <!-- PROJECT DETAIL PAGE (ON HOLD) -->
+    <!-- <a [routerLink]="['/projects', project.title.toLowerCase()]">Learn more</a> -->
   </ng-template>
+
+  <!-- FOOTER: ACTIONS -->
+  <ng-template #actionLearnMore>
+    <button nz-button nzType="link" (click)="onOpenModal(project)">Learn more</button>
+  </ng-template>
+  <ng-template #actionLiveDemo>
+    <button
+      nz-button
+      nzType="link"
+      [disabled]="!project.liveDemoUrl"
+      (click)="onRedirect(project.liveDemoUrl!); $event.stopPropagation()"
+    >
+      Live demo
+    </button>
+  </ng-template>
+  <ng-template #actionSeeCode>
+    <button
+      nz-button
+      nzType="link"
+      [disabled]="!project.sourceCodeUrl"
+      (click)="onRedirect(project.sourceCodeUrl!); $event.stopPropagation()"
+    >
+      See code
+    </button>
+  </ng-template>
+
   <!-- End of CARD -->
 </ng-container>
 
@@ -87,7 +84,7 @@
       *ngIf="modalState.hasLiveDemo && modalState.liveDemoUrl"
       nz-button
       nzType="primary"
-      (click)="onRedirect(modalState.liveDemoUrl)"
+      (click)="onRedirect(modalState.liveDemoUrl); $event.stopPropagation()"
     >
       Live demo
     </button>

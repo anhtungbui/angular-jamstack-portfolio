@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 import { Project } from 'src/app/home/interfaces/project.interface';
 
 @Component({
@@ -20,14 +19,10 @@ export class ProjectCardComponent {
     liveDemoUrl: ''
   };
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   onRedirect(url: string): void {
     window.open(url, '_blank');
-  }
-
-  onLearnMore(project: Project): void {
-    this.router.navigateByUrl(`/projects/q?id=${project.title.toLowerCase()}`);
   }
 
   onOpenModal(project: Project) {
