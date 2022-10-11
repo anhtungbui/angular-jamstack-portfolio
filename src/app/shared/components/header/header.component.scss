@@ -66,7 +66,12 @@
   }
 }
 
-.navbar__responsive-menu-toggle {
+/*
+The responsive menu and its toggle button 
+are only visible on small and medium viewport
+*/
+.navbar__responsive-menu-toggle,
+.responsive-menu {
   display: none;
 
   @media screen and (max-width: variables.$nz-md) {
