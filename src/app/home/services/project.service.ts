@@ -33,7 +33,8 @@ export class ProjectService {
         Technology.ANGULAR,
         Technology.STATIC_SITE_GENERATOR,
         Technology.SCULLY,
-        Technology.SASS
+        Technology.SASS,
+        Technology.RESPONSIVE_DESIGN
       ],
       screenshot: 'assets/img/projects/jamstack-portfolio-screenshot.png',
       isSourceCodeAvailable: true,
@@ -55,7 +56,7 @@ export class ProjectService {
       title: 'iSass Landing Page',
       description:
         "A 1:1 clone of Apple.com's landing page as of July 2020 for the sake of mastering the Sass language 🍎",
-      technologies: [Technology.SASS],
+      technologies: [Technology.SASS, Technology.RESPONSIVE_DESIGN],
       screenshot: 'assets/img/projects/isass-screenshot.png',
       isSourceCodeAvailable: true,
       sourceCodeUrl: 'https://github.com/anhtungbui/apple-iSass',

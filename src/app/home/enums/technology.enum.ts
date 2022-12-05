@@ -15,5 +15,8 @@ export enum Technology {
   LARAVEL = 'Laravel',
   CYPRESS = 'Cypress',
   LIVEWIRE = 'Livewire',
-  SCULLY = 'Scully'
+  SCULLY = 'Scully',
+
+  /** Others */
+  RESPONSIVE_DESIGN = 'Responsive Design'
 }
