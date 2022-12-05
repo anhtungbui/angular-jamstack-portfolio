@@ -14,5 +14,6 @@ export enum Technology {
   STATIC_SITE_GENERATOR = 'Static Site Generator',
   LARAVEL = 'Laravel',
   CYPRESS = 'Cypress',
-  LIVEWIRE = 'Livewire'
+  LIVEWIRE = 'Livewire',
+  SCULLY = 'Scully'
 }

@@ -1,8 +1,13 @@
 .project-card {
   height: 100%;
-}
 
-.project-card__modal-screenshot {
-  max-width: 100%;
-  height: auto;
+  &__modal-screenshot {
+    max-width: 60%;
+    height: auto;
+  }
+
+  &__modal-content {
+    display: flex;
+    justify-content: center;
+  }
 }

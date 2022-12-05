@@ -64,18 +64,20 @@
 </ng-template>
 
 <nz-modal
-  [(nzVisible)]="modalState.isVisble"
+  [(nzVisible)]="modalState.isVisible"
   nzTitle="{{ modalState.title }}"
   [nzFooter]="modalFooter"
   (nzOnCancel)="handleCancel()"
   nzWidth
 >
   <ng-container *nzModalContent>
-    <img
-      class="project-card__modal-screenshot"
-      src="{{ modalState.screenshot }}"
-      alt="screenshot"
-    />
+    <div class="project-card__modal-content">
+      <img
+        class="project-card__modal-screenshot"
+        src="{{ modalState.screenshot }}"
+        alt="screenshot"
+      />
+    </div>
   </ng-container>
 
   <ng-template #modalFooter>

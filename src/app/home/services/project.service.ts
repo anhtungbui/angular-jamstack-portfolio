@@ -26,6 +26,22 @@ export class ProjectService {
       hasLiveDemo: false
     },
     {
+      title: 'Jamstack Portfolio',
+      description: 'A minimalist design portfolio built with modern Jamstack architecture',
+      technologies: [
+        Technology.TYPESCRIPT,
+        Technology.ANGULAR,
+        Technology.STATIC_SITE_GENERATOR,
+        Technology.SCULLY,
+        Technology.SASS
+      ],
+      screenshot: 'assets/img/projects/jamstack-portfolio-screenshot.png',
+      isSourceCodeAvailable: true,
+      sourceCodeUrl: 'https://github.com/anhtungbui/angular-jamstack-portfolio',
+      hasLiveDemo: false,
+      liveDemoUrl: 'https://abui.dev/'
+    },
+    {
       title: 'StockBay',
       description: 'A modern information hub for stock traders 📚',
       technologies: [Technology.JAVASCRIPT, Technology.REACT, Technology.SASS],
@@ -34,20 +50,6 @@ export class ProjectService {
       sourceCodeUrl: 'https://github.com/anhtungbui/React-StockBay',
       hasLiveDemo: true,
       liveDemoUrl: 'https://stockbay.netlify.com/'
-    },
-    {
-      title: 'Jamstack Portfolio',
-      description: 'A minimalist design portfolio built with modern Jamstack architecture',
-      technologies: [
-        Technology.TYPESCRIPT,
-        Technology.ANGULAR,
-        Technology.STATIC_SITE_GENERATOR,
-        Technology.CYPRESS,
-        Technology.SASS
-      ],
-      screenshot: 'assets/img/projects/jamstack-portfolio-screenshot.png',
-      isSourceCodeAvailable: false,
-      hasLiveDemo: false
     },
     {
       title: 'iSass Landing Page',

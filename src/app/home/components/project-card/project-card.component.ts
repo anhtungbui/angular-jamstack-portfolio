@@ -10,7 +10,7 @@ export class ProjectCardComponent {
   @Input() project?: Project;
 
   modalState = {
-    isVisble: false,
+    isVisible: false,
     title: '',
     screenshot: '',
     isSourceCodeAvailable: false,
@@ -27,7 +27,7 @@ export class ProjectCardComponent {
 
   onOpenModal(project: Project) {
     this.modalState = {
-      isVisble: true,
+      isVisible: true,
       title: `${project.title} developed by Anh Tung Bui`,
       screenshot: project.screenshot,
       isSourceCodeAvailable: project.isSourceCodeAvailable ? project.isSourceCodeAvailable : false,
@@ -38,6 +38,6 @@ export class ProjectCardComponent {
   }
 
   handleCancel() {
-    this.modalState.isVisble = false;
+    this.modalState.isVisible = false;
   }
 }
