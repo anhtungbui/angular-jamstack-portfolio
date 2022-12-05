@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
-    title: 'Anh Tung Bui · Software Developer'
+    title: 'Anh Tung Bui · Web Developer'
   },
   /* FIXME: */
   { path: '**', redirectTo: '' }
